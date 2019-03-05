@@ -37,11 +37,7 @@ class App extends Component {
   }
 
   hitAction = () => {
-      if (this.state.hit === 1) {
-          this.setState({strikes:0, balls:0})
-      } else {
-          this.setState({ hits:this.state.hits + 1 })
-      }
+     this.setState({ hits:this.state.hits + 1, strikes: 0, balls:0})
   }
 
 
